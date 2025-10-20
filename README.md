@@ -9,3 +9,5 @@ I then thought that these hashes might also be useful to other users, so I exten
 One option of my program allows to generate the hashes of all the lines in an input file, so I devised to collect the 32-bit hashes in a long "string" and take the xxHash32 from they all. The result is a new 32-bit hash value (I could nickname it "xxh32-squared" as a joke) that can be used to check the integrity of a simple text file when no more requirements are needed.
 
 After that, I wondered if this method could be translated to a Windows Batch file... The technical challenge was interesting because the original code uses several unsigned operations which are not available in the cmd.exe's SET /A command. I had a lot of fun trying to compensate for the inherent limitations of Batch files in a way that was not only functional, but also looked like the original. I finally resolved all the issues and the batch file **xxHash32.bat** is also included here.
+
+I suspect this Batch version is the slowest one of all different versions published here (after the Bash one). If so, then _the fastest and the slowest_ xxh32 versions are mine!  **;)**
