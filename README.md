@@ -1,4 +1,4 @@
-**What are these files and where comes from?**
+**What these files are and where they comes from?**
 
 I started to studied hash functions because I need to process a huge file in which it is necessary to search for a certain string. The job of keeping such a large file sorted so that a binary search can be performed on it was out of the question. Instead, I thought about creating a companion file with only two fields per record, the 32-bit hash value and the position (32-bit offset) of each record in the original file, so this much smaller file could be kept sorted more easily. Of course, multiple collisions need to be managed.
 
